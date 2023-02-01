@@ -10,3 +10,7 @@ Everything we run is a part of a execution context (a function that is running)
 Global EC give us global object, this, ...
 
 this => in a browser, this === window (global object, inside node is global instead of window)
+
+### Lexical Environment
+
+A place where we write the code, the same space that execution context creates. The EC tells us witch LE is running (scope)
