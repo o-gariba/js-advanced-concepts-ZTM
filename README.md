@@ -32,3 +32,29 @@ DS = where the function is called
 Lexical env === `[[scope]]`
 
 if we search a function in our browser we see `[[scope]]` object showing its scope(s)
+
+### Weird cases in JS
+
+if we create a function with a variable not declared, js tries to find its declaration in global env (which will not find) and then create a declaration for us. Which is very weird. 'use strict' will throw an error (which is better).
+
+if we have:
+
+```js
+var hey = function oou() {
+  return 'hey'
+}
+
+doodle()
+```
+
+js will throw a referenceError bcause oou just exists inside `hey` env. This will work:
+
+```js
+var hey = function oou() {
+  doodle()
+  return 'hey'
+}
+
+// hey
+
+```
