@@ -28,3 +28,7 @@ lexical scope (LS) !== dynamic scope (DS)
 
 LS = available data and variables where the function was defined
 DS = where the function is called
+
+Lexical env === `[[scope]]`
+
+if we search a function in our browser we see `[[scope]]` object showing its scope(s)
