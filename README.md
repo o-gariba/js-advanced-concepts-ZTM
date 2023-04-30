@@ -66,3 +66,16 @@ scope === what variables we have access to
 js have function scope (with `var` declaration)
 
 block scope comes with ES6, with `let` and `const` declaration
+
+### IIFE
+
+immediately invoked function expression
+
+```js
+(function() {
+  var a = 1
+})();
+
+a // erro a is not defined
+```
+
