@@ -47,7 +47,7 @@ var hey = function oou() {
 doodle()
 ```
 
-js will throw a referenceError bcause oou just exists inside `hey` env. This will work:
+js will throw a referenceError because oou just exists inside `hey` env. This will work:
 
 ```js
 var hey = function oou() {
@@ -58,3 +58,11 @@ var hey = function oou() {
 // hey
 
 ```
+
+### Function scope vs block scope
+
+scope === what variables we have access to 
+
+js have function scope (with `var` declaration)
+
+block scope comes with ES6, with `let` and `const` declaration
