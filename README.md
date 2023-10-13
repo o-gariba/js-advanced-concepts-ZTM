@@ -130,3 +130,10 @@ immediately invoked function expression
 a // erro a is not defined
 ```
 
+---
+
+## Section 9
+
+### Memory leak
+
+It happens when a program allocates memory with unused variables. We ran out of memory because we allocate badly.
