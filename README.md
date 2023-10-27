@@ -137,3 +137,36 @@ a // erro a is not defined
 ### Memory leak
 
 It happens when a program allocates memory with unused variables. We ran out of memory because we allocate badly.
+
+---
+
+## Section 3
+
+### Context vs Scope
+
+Scope is function based, its about witch variables have access to what.
+
+Context is about objects. Whats the value of `this`?
+
+---
+
+## Section 4
+
+### JS types
+
+```js
+typeof null //'object'
+```
+
+This is a mistake and has been chosen not to change it because legacy.
+
+functions are objects (arrays are too). We can assure it by doing:
+
+```js
+function a() {
+  return 5
+}
+a.hi = 'haha'
+
+console.log(a.hi) //haha
+```
